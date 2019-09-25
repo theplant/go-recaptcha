@@ -1,18 +1,19 @@
 // example.go
 //
 // A simple HTTP server which presents a reCaptcha input form and evaulates the result,
-// using the github.com/dpapathanasiou/go-recaptcha package.
+// using the github.com/theplant/go-recaptcha package.
 //
 // See the main() function for usage.
 package main
 
 import (
 	"fmt"
-	"github.com/dpapathanasiou/go-recaptcha"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+
+	"github.com/theplant/go-recaptcha"
 )
 
 var recaptchaPublicKey string

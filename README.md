@@ -1,7 +1,7 @@
 go-recaptcha
 ============
 
-https://godoc.org/github.com/dpapathanasiou/go-recaptcha
+https://godoc.org/github.com/theplant/go-recaptcha
 
 About
 -----
@@ -14,10 +14,10 @@ Usage
 Install the package in your environment:
 
 ```
-go get github.com/dpapathanasiou/go-recaptcha
+go get github.com/theplant/go-recaptcha
 ```
 
-To use it within your own code, import <tt>github.com/dpapathanasiou/go-recaptcha</tt> and call:
+To use it within your own code, import <tt>github.com/theplant/go-recaptcha</tt> and call:
 
 ```
 recaptcha.Init (recaptchaPrivateKey)
