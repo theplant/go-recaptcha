@@ -42,12 +42,12 @@ func Check(remoteip, response string) (r RecaptchaResponse, err error) {
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		log.Println("Read error: could not read body: %s", err)
+		log.Printf("Read error: could not read body: %s\n", err)
 		return
 	}
 	err = json.Unmarshal(body, &r)
 	if err != nil {
-		log.Println("Read error: got invalid JSON: %s", err)
+		log.Printf("Read error: got invalid JSON: %s\n", err)
 		return
 	}
 	return
